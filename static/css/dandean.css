@@ -1,5 +1,24 @@
 :root {
+  --text: #f8f8f2;
+  --link: #8be9fd;
+  --link_visited: #8be9fd;
+  --accent1: #f8f8f2;
+  --accent2: #f8f8f2;
   --background: #0000FF;
+  --code: #44475a;
+  --button-text: #282a36;
+  --blockquote: #44475a;
+  --blockquote-border: #6272a4;
+  --aside: #6272a4;
+  --aside-border: #7797b7	;
+  --note: #3f444a;
+  --note-border: #4f545a;
+  --alert: #ff5555;
+  --alert-border: #ff6e6e;
+  --field: #44475a;
+  --mark: #FFFF99;
+  --audio-link: #ff6e6e;
+
 }
 
 .site-header {
