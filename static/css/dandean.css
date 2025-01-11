@@ -1,3 +1,7 @@
 :root {
   --background: #0000FF;
 }
+
+.site-header {
+  height: 70vh;
+}
