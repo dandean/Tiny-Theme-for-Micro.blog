@@ -50,6 +50,13 @@ h6 {
   align-items: center;
   justify-content: left;
 
+  .stamp {
+    height: 110px;
+    margin-right: 1rem;
+    overflow: visible;
+    width: 110px;    
+  }
+
   h1 {
     font-weight: 300;
   }
