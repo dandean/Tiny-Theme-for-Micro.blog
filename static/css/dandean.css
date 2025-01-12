@@ -2,6 +2,7 @@
 @import url('../webfonts/rubik/800.css');
 
 :root {
+  /* colors */
   --text: #f8f8f2;
   --link: #8be9fd;
   --link_visited: #8be9fd;
@@ -21,9 +22,18 @@
   --field: #44475a;
   --mark: #ffff99;
   --audio-link: #ff6e6e;
+
+  /* font sizes */
+  --base-font-size: 17px;
+  --base-line-height: 1.58;
+  --base-line-height-rem: 1.58rem;
 }
 
+/* HTML Elements */
+
 body {
+  font-size: var(--base-font-size);
+  line-height: var(--base-line-height);
   font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica,
     Arial, sans-serif;
 }
@@ -34,11 +44,54 @@ h3,
 h4,
 h5,
 h6 {
+  margin: 0 0 var(--base-line-height-rem) 0;
   font-family: Rubik, -apple-system, BlinkMacSystemFont, Helvetica Neue,
     Helvetica, Arial, sans-serif;
   font-weight: 800;
   text-rendering: optimizeLegibility;
 }
+
+h1 {
+  font-size: 2rem;
+}
+h2 {
+  font-size: 1.51572rem;
+}
+h3 {
+  font-size: 1.31951rem;
+}
+h4 {
+  font-size: 1rem;
+}
+h5 {
+  font-size: 0.87055rem;
+}
+h6 {
+  font-size: 0.81225rem;
+}
+
+p {
+  margin-bottom: var(--base-line-height-rem);
+}
+
+b,
+strong {
+  font-weight: 800;
+}
+
+ul,
+ol {
+  margin: 0 0 var(--base-line-height-rem) var(--base-line-height-rem);
+  padding: 0;
+}
+
+li {
+  padding-left: 0;
+  margin-bottom: calc(var(--base-line-height-rem) / 4);
+  margin-bottom: 0;
+}
+
+/* website components */
 
 .site-header {
   box-sizing: border-box;
