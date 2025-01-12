@@ -41,7 +41,14 @@ h6 {
 }
 
 .site-header {
+  box-sizing: border-box;
   height: 70vh;
+  margin: 0;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
 
   h1 {
     font-weight: 300;
