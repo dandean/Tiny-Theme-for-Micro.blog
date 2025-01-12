@@ -36,6 +36,8 @@ body {
   line-height: var(--base-line-height);
   font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica,
     Arial, sans-serif;
+  
+  max-width: 800px;
 }
 
 h1,
@@ -105,9 +107,15 @@ li {
 
   .stamp {
     height: 110px;
+    width: 110px;
+
+    @media screen and (max-width: 896px) {
+      width: 60px;
+      height: 60px;
+    }
+
     margin-right: 1rem;
     overflow: visible;
-    width: 110px;
 
     * {
       stroke: white;
@@ -118,7 +126,29 @@ li {
     }
   }
 
-  h1 {
+  h1, h2 {
     font-weight: 300;
+  }
+
+  .title-home {
+    & h1 {
+      margin: 0 0 0 -5px;
+      font-size: 5rem;
+
+      @media screen and (max-width: 896px) {
+        margin: 0 0 0 -3px;
+        font-size: 2rem;
+      }
+    }
+
+    & h2 {
+      margin: -10px 0 0 0;
+      white-space: nowrap;
+
+      @media screen and (max-width: 896px) {
+        margin: -5px 0 0 0;
+        font-size: 1rem;
+      }
+    }
   }
 }

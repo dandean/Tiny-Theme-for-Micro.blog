@@ -1,8 +1,10 @@
 {{ if .IsHome }}
-  <div>
+  <div class="title-home">
     <h1><a class="site-title p-name u-url" href="/">{{ .Site.Title }}</a></h1>
     <h2>Software, Music, and Clay</h2>
   </div>
 {{ else }}
-  <div>not home</div>
+  <div class="title-other">
+    <div>not home</div>
+  </div>
 {{ end }}
