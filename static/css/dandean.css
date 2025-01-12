@@ -54,7 +54,15 @@ h6 {
     height: 110px;
     margin-right: 1rem;
     overflow: visible;
-    width: 110px;    
+    width: 110px;
+
+    * {
+      stroke: white;
+    }
+
+    & circle + circle {
+      stroke-width: 1rem;
+    }
   }
 
   h1 {
