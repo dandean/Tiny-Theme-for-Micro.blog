@@ -5,6 +5,9 @@
   </div>
 {{ else }}
   <div class="title-other">
-    <div>not home</div>
+    <div>
+      <a class="site-title p-name u-url" href="/">{{ .Site.Title }}</a> / [category]:
+    </div>
+    <h1>{{ .Title }}</h1>
   </div>
 {{ end }}
