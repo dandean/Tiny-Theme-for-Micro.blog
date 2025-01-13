@@ -6,7 +6,13 @@
 {{ else }}
   <div class="title-other">
     <div>
-      <a class="site-title p-name u-url" href="/">{{ .Site.Title }}</a> / [category]:
+      <a class="site-title p-name u-url" href="/">{{ .Site.Title }}</a>
+      /
+      {{ if isset .Params.categories }}
+        {{ .Params.categories }}
+      {{ else }}
+        Post
+      {{ end }}
     </div>
     <h1>{{ .Title }}</h1>
   </div>
