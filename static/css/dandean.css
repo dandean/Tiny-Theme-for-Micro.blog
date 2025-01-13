@@ -9,7 +9,7 @@
   --accent1: #f8f8f2;
   --accent2: #f8f8f2;
   --background: #0000ff;
-  --code: #44475a;
+  --code: #0019b6;
   --button-text: #282a36;
   --blockquote: #44475a;
   --blockquote-border: #6272a4;
@@ -36,7 +36,7 @@ body {
   line-height: var(--base-line-height);
   font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica,
     Arial, sans-serif;
-  
+
   max-width: 800px;
 }
 
@@ -94,6 +94,11 @@ li {
   margin-bottom: 0;
 }
 
+pre, li > code, pre > code {
+  background-color: var(--code);
+  border-radius: 3px;
+}
+
 /* website components */
 
 .site-header {
@@ -127,7 +132,8 @@ li {
     }
   }
 
-  h1, h2 {
+  h1,
+  h2 {
     font-weight: 300;
   }
 
