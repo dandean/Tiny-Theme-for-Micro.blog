@@ -8,10 +8,10 @@
     <div>
       <a class="site-title p-name u-url" href="/">{{ .Site.Title }}</a>
       /
-      {{ if (eq (.Params.categories | len) 0) }}
-        Post
-      {{ else }}
+      {{ if .Params.categories }}
         {{ delimit .Params.categories ", " }}
+      {{ else }}
+        Post
       {{ end }}
     </div>
     <h1>{{ .Title }}</h1>
